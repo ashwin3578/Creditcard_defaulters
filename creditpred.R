@@ -1,13 +1,6 @@
-#PREDICTIVE ANALYTICS ASSIGNMENT (301117)
-
-#STUDENT NO.: 19257701
-
-#STUDENT NAME: ASHWIN MOHAN
-
-
 #-------------------------------------------------------------------------------------------------
 
-#QUESTION (1) DATA READING AND FORMATTING
+# PART 1 - DATA READING AND FORMATTING
 
 #reading the csv into a
 a = read.csv("Credit_Card_train.csv")
@@ -18,7 +11,7 @@ aframe=data.frame(a)
 
 #-------------------------------------------------------------------------------------------------
 
-#QUESTION (2) MISSING VALUE HANDLING
+# PART 2 - MISSING VALUE HANDLING
 
 #seeing the entire AGE data from the dataframe aframe
 aframe$AGE
@@ -50,7 +43,7 @@ bframe
 
 #--------------------------------------------------------------------------------------------------
 
-#QUESTION (3a) Determine what variables you want to use in the model 
+# PART 3a - Determine what variables you want to use in the model 
 
 #METHOD 1: BORUTA
 
@@ -88,7 +81,7 @@ roughFixMod <- TentativeRoughFix(boruta_output)
 
 #---------------------------------------------------------------------------------------------------
 
-#QUESTION (3b & 3c)
+# PART 3b & 3c
 
 # Logistic regression, random forest, and SVM have been used
 # Cross validation required in 3c has been shown along with the models
